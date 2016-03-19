@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		38F5BE701C9D53C00037134B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE6F1C9D53C00037134B /* main.swift */; };
+		38F5BE791C9D66770037134B /* lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE781C9D66770037134B /* lens.swift */; };
+		38F5BE7B1C9D69080037134B /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE7A1C9D69080037134B /* parser.swift */; };
+		38F5BE7D1C9D92D40037134B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE7C1C9D92D40037134B /* extensions.swift */; };
+		38F5BE8C1C9DB2CB0037134B /* composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE8B1C9DB2CB0037134B /* composition.swift */; };
+		38F5BE941C9DCD470037134B /* LensCodeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE931C9DCD470037134B /* LensCodeGeneratorTests.swift */; };
+		38F5BEB81C9DD6DB0037134B /* lens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE781C9D66770037134B /* lens.swift */; };
+		38F5BEB91C9DD6DE0037134B /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE7A1C9D69080037134B /* parser.swift */; };
+		38F5BEBA1C9DD6E00037134B /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE7C1C9D92D40037134B /* extensions.swift */; };
+		38F5BEBB1C9DD6E30037134B /* composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F5BE8B1C9DB2CB0037134B /* composition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +34,24 @@
 /* Begin PBXFileReference section */
 		38F5BE6C1C9D53C00037134B /* LensCodeGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LensCodeGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F5BE6F1C9D53C00037134B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		38F5BE781C9D66770037134B /* lens.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = lens.swift; sourceTree = "<group>"; };
+		38F5BE7A1C9D69080037134B /* parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parser.swift; sourceTree = "<group>"; };
+		38F5BE7C1C9D92D40037134B /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		38F5BE8B1C9DB2CB0037134B /* composition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = composition.swift; sourceTree = "<group>"; };
+		38F5BE911C9DCD470037134B /* LensCodeGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LensCodeGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		38F5BE931C9DCD470037134B /* LensCodeGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LensCodeGeneratorTests.swift; sourceTree = "<group>"; };
+		38F5BE951C9DCD470037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		38F5BE691C9D53C00037134B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F5BE8E1C9DCD470037134B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				38F5BE6E1C9D53C00037134B /* LensCodeGenerator */,
+				38F5BE921C9DCD470037134B /* LensCodeGeneratorTests */,
 				38F5BE6D1C9D53C00037134B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				38F5BE6C1C9D53C00037134B /* LensCodeGenerator */,
+				38F5BE911C9DCD470037134B /* LensCodeGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +83,21 @@
 			isa = PBXGroup;
 			children = (
 				38F5BE6F1C9D53C00037134B /* main.swift */,
+				38F5BE781C9D66770037134B /* lens.swift */,
+				38F5BE7A1C9D69080037134B /* parser.swift */,
+				38F5BE7C1C9D92D40037134B /* extensions.swift */,
+				38F5BE8B1C9DB2CB0037134B /* composition.swift */,
 			);
 			path = LensCodeGenerator;
+			sourceTree = "<group>";
+		};
+		38F5BE921C9DCD470037134B /* LensCodeGeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				38F5BE931C9DCD470037134B /* LensCodeGeneratorTests.swift */,
+				38F5BE951C9DCD470037134B /* Info.plist */,
+			);
+			path = LensCodeGeneratorTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +120,23 @@
 			productReference = 38F5BE6C1C9D53C00037134B /* LensCodeGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
+		38F5BE901C9DCD470037134B /* LensCodeGeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38F5BE961C9DCD470037134B /* Build configuration list for PBXNativeTarget "LensCodeGeneratorTests" */;
+			buildPhases = (
+				38F5BE8D1C9DCD470037134B /* Sources */,
+				38F5BE8E1C9DCD470037134B /* Frameworks */,
+				38F5BE8F1C9DCD470037134B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LensCodeGeneratorTests;
+			productName = LensCodeGeneratorTests;
+			productReference = 38F5BE911C9DCD470037134B /* LensCodeGeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +148,9 @@
 				ORGANIZATIONNAME = exfalsoquodlibet.it;
 				TargetAttributes = {
 					38F5BE6B1C9D53C00037134B = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					38F5BE901C9DCD470037134B = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
@@ -110,16 +168,43 @@
 			projectRoot = "";
 			targets = (
 				38F5BE6B1C9D53C00037134B /* LensCodeGenerator */,
+				38F5BE901C9DCD470037134B /* LensCodeGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38F5BE8F1C9DCD470037134B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38F5BE681C9D53C00037134B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38F5BE7D1C9D92D40037134B /* extensions.swift in Sources */,
 				38F5BE701C9D53C00037134B /* main.swift in Sources */,
+				38F5BE7B1C9D69080037134B /* parser.swift in Sources */,
+				38F5BE8C1C9DB2CB0037134B /* composition.swift in Sources */,
+				38F5BE791C9D66770037134B /* lens.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F5BE8D1C9DCD470037134B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F5BE941C9DCD470037134B /* LensCodeGeneratorTests.swift in Sources */,
+				38F5BEB91C9DD6DE0037134B /* parser.swift in Sources */,
+				38F5BEB81C9DD6DB0037134B /* lens.swift in Sources */,
+				38F5BEBA1C9DD6E00037134B /* extensions.swift in Sources */,
+				38F5BEBB1C9DD6E30037134B /* composition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +231,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -190,6 +276,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -209,6 +296,7 @@
 		38F5BE741C9D53C00037134B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +304,29 @@
 		38F5BE751C9D53C00037134B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		38F5BE971C9DCD470037134B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LensCodeGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.exfalsoquodlibet.LensCodeGeneratorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38F5BE981C9DCD470037134B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LensCodeGeneratorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.exfalsoquodlibet.LensCodeGeneratorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +348,14 @@
 			buildConfigurations = (
 				38F5BE741C9D53C00037134B /* Debug */,
 				38F5BE751C9D53C00037134B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		38F5BE961C9DCD470037134B /* Build configuration list for PBXNativeTarget "LensCodeGeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38F5BE971C9DCD470037134B /* Debug */,
+				38F5BE981C9DCD470037134B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
